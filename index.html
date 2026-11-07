@@ -1,667 +1,764 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>abc BUSINESS SOLUTION | UAE Business Setup &amp; Corporate Services</title>
-<meta name="description" content="Company formation, licensing, visas and corporate services in the UAE, all under one roof.">
-<meta name="theme-color" content="#030B5B">
-<style>
-:root{--n:#030B5B;--r:#C1272D;--w:#fff;--g:#F5F7FB;--b:#E1E5F0;--t:#2b3157;--n2:#2E3192;--r2:#C10618;--ff:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:84px}
-body{margin:0;font:16px/1.65 var(--ff);color:var(--t);background:var(--w);overflow-x:hidden}
-h1,h2,h3{color:var(--n);line-height:1.2;margin:0 0 .5em}
-h1{font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.02em}
-h2{font-size:clamp(1.6rem,3.2vw,2.3rem)}
-h3{font-size:1.1rem}
-p{margin:0 0 1em}
-a{color:inherit}
-.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
-section{padding:72px 0}
-.alt{background:var(--g)}
-[hidden]{display:none!important}
-:focus-visible{outline:3px solid var(--r);outline-offset:2px}
-.lab{color:var(--r);font-weight:700;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:10px;position:relative;padding-bottom:6px}
-.lab:after{content:"";position:absolute;left:0;bottom:0;height:2px;width:36px;background:var(--r2)}
-.hd{max-width:680px;margin-bottom:36px}
-.hd p{color:#555c80}
-.btn{display:inline-block;position:relative;overflow:hidden;border:2px solid var(--r);background:var(--r);color:#fff;padding:12px 24px;border-radius:8px;font:600 1rem var(--ff);text-decoration:none;cursor:pointer;transition:transform .25s,background .25s,border-color .25s}
-.btn:hover{background:var(--r2);border-color:var(--r2);transform:translateY(-2px)}
-.btn.o{background:#fff;color:var(--n);border-color:var(--n)}
-.btn.o:hover{background:var(--n2);color:#fff;border-color:var(--n2)}
-.btn[disabled]{opacity:.6;cursor:wait}
-.btn:not(.o):after{content:"";position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);animation:shine 3.5s ease-in-out infinite}
-@keyframes shine{0%,60%{left:-80%}100%{left:130%}}
-.grid{display:grid;gap:20px;grid-template-columns:1fr}
-@media(min-width:600px){.g2,.g3,.g4{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:960px){.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}}
-.card{background:#fff;border:1px solid var(--b);border-radius:12px;padding:24px;box-shadow:0 2px 8px rgba(3,11,91,.05);transition:transform .3s,box-shadow .3s;display:flex;flex-direction:column;text-decoration:none;position:relative;overflow:hidden}
-.card:before{content:"";position:absolute;left:0;top:0;height:3px;width:0;background:linear-gradient(90deg,var(--n2),var(--r2));transition:width .4s}
-.card:hover{transform:translateY(-5px);box-shadow:0 12px 28px rgba(3,11,91,.12)}
-.card:hover:before{width:100%}
-.card p{flex:1;font-size:.95rem}
-.card .go{color:var(--r);font-weight:600;font-size:.9rem;text-decoration:none}
-.card .go:after{content:" →";display:inline-block;transition:transform .25s}
-.card:hover .go:after{transform:translateX(4px)}
-.ic{width:34px;height:34px;fill:none;stroke:var(--n);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;margin-bottom:14px;transition:.25s}
-.card:hover .ic{stroke:var(--r2);transform:translateY(-3px) scale(1.08)}
-/* Header */
-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--b)}
-.bar{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
-.logo{text-decoration:none;color:var(--n);display:flex;align-items:center;gap:8px;flex-shrink:0}
-.logo b{font-size:1.9rem;letter-spacing:-.04em;line-height:1}
-.logo b i{display:inline-block;color:var(--r);font-style:normal;animation:dot 2.4s ease-in-out infinite}
-@keyframes dot{0%,100%{transform:scale(1);color:var(--r)}50%{transform:scale(1.35);color:var(--r2)}}
-.logo small{font-size:.6rem;letter-spacing:.14em;font-weight:700;line-height:1.2}
-nav ul{list-style:none;margin:0;padding:0}
-.top{display:flex;gap:4px;align-items:center}
-.top>li{position:relative}
-.top>li>a,.top>li>button{font:600 .76rem var(--ff);letter-spacing:.04em;color:var(--n);background:none;border:0;padding:10px 9px;cursor:pointer;text-decoration:none;display:block;position:relative}
-.top>li>a:after,.top>li>button:after{content:"";position:absolute;left:9px;right:9px;bottom:4px;height:2px;background:var(--r);transform:scaleX(0);transition:.25s}
-.top>li:hover>a:after,.top>li:hover>button:after,.top>li.open>button:after{transform:scaleX(1)}
-.sub{display:none;position:absolute;top:100%;left:0;min-width:230px;background:#fff;border:1px solid var(--b);border-radius:10px;box-shadow:0 12px 28px rgba(3,11,91,.14);padding:8px}
-.sub a{display:block;padding:8px 12px;border-radius:6px;text-decoration:none;font-size:.9rem;color:var(--n)}
-.sub a:hover{background:var(--g);color:var(--r)}
-@media(min-width:1081px){.top>li:hover>.sub,.top>li.open>.sub{display:block}}
-.burger{display:none;background:none;border:1px solid var(--b);border-radius:8px;width:44px;height:44px;cursor:pointer;flex-shrink:0}
-.burger span{display:block;width:20px;height:2px;background:var(--n);margin:5px auto;transition:.3s}
-.menu-open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-.menu-open .burger span:nth-child(2){opacity:0}
-.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-@media(max-width:1080px){
- .burger{display:block}.hcta{display:none}
- header .wrap{position:relative}
- header nav{position:absolute;top:72px;left:0;right:0;background:#fff;border-bottom:1px solid var(--b);max-height:0;overflow:hidden;transition:max-height .35s}
- .menu-open header nav{max-height:calc(100vh - 72px);overflow-y:auto}
- .top{flex-direction:column;align-items:stretch;padding:8px 20px 20px}
- .top>li>a,.top>li>button{width:100%;text-align:left;padding:14px 4px;font-size:.9rem}
- .sub{position:static;box-shadow:none;border:0;padding:0 0 0 12px}
- .top>li.open>.sub{display:block}
-}
-.hero {
-    position: relative;
-    min-height: 600px;
-    overflow: hidden;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ടുഡേ കിച്ചൻ— രുചികരമായ ഭക്ഷണം</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="icon" href="https://png.pngtree.com/png-vector/20220727/ourmid/pngtree-food-logo-png-image_6089719.png" type="image/png" />
+  <style>
+    :root {
+      --primary: #e85d04;
+      --primary-dark: #d00000;
+      --accent: #faa307;
+      --bg: #fff8f0;
+      --card: #ffffff;
+      --text: #1a1a1a;
+      --muted: #6b7280;
+      --shadow: 0 10px 40px rgba(0,0,0,0.08);
+      --radius: 20px;
+    }
 
-    /* Background image */
-    background-image:
-        linear-gradient(
-            90deg,
-            rgba(3, 11, 91, 0.88) 0%,
-            rgba(3, 11, 91, 0.65) 50%,
-            rgba(3, 11, 91, 0.25) 100%
-        ),
-        url("officestaff.jpg");
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+    body {
+      font-family: 'Poppins', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+    }
 
-.hero .wrap {
-    position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: 1fr 0.8fr;
-    align-items: center;
-    gap: 40px;
-    min-height: 600px;
-    padding: 60px 0;
-    box-sizing: border-box;
-}
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 5%;
+      background: rgba(255, 248, 240, 0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      transition: box-shadow 0.3s;
+    }
 
-.hero-content {
-    max-width: 650px;
-}
+    nav.scrolled {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
 
-.hero h1,
-.hero p,
-.hero .lab {
-    color: #FFFFFF;
-}
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
 
-.vis {
-    position: relative;
-    min-height: 400px;
-}
+    .logo span { font-size: 1.8rem; }
 
-.float {
-    position: absolute;
-    bottom: 30px;
-    left: 0;
-    max-width: 300px;
-    padding: 20px;
-    border-radius: 12px;
-    background: #FFFFFF;
-    color: #030B5B;
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
-}
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
 
-.float b {
-    display: block;
-    margin-bottom: 8px;
-}
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
 
-/* Mobile layout */
-@media (max-width: 768px) {
-    .hero .wrap {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 50px 20px;
+    .nav-links a:hover { color: var(--primary); }
+
+    .cart-btn {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .cart-btn:hover {
+      background: var(--primary-dark);
+      transform: scale(1.05);
+    }
+
+    .cart-count {
+      background: white;
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 700;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .hero {
+      background-image:url("https://images.pexels.com/photos/29136418/pexels-photo-29136418.jpeg");
+	background-size:cover;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 6rem 1.5rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(232,93,4,0.12) 0%, transparent 70%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+
+    .bowl-container {
+      position: relative;
+      width: 280px;
+      height: 280px;
+      margin-bottom: 2.5rem;
+    }
+
+    .rice-bowl {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow:
+        0 25px 50px rgba(232, 93, 4, 0.25),
+        0 0 0 12px rgba(255,255,255,0.6),
+        0 0 0 18px rgba(232,93,4,0.15);
+      animation: rotateBowl 12s linear infinite;
+    }
+
+    .rice-bowl:hover { animation-play-state: paused; }
+
+    @keyframes rotateBowl {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .steam {
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 60px;
+      pointer-events: none;
+    }
+
+    .steam span {
+      position: absolute;
+      bottom: 0;
+      width: 8px;
+      height: 40px;
+      background: linear-gradient(to top, rgba(255,255,255,0.7), transparent);
+      border-radius: 50%;
+      filter: blur(4px);
+      animation: steamUp 2.5s ease-in-out infinite;
+    }
+
+    .steam span:nth-child(1) { left: 15px; animation-delay: 0s; }
+    .steam span:nth-child(2) { left: 35px; animation-delay: 0.4s; height: 50px; }
+    .steam span:nth-child(3) { left: 55px; animation-delay: 0.8s; }
+
+    @keyframes steamUp {
+      0% { opacity: 0; transform: translateY(0) scaleX(1); }
+      30% { opacity: 0.8; }
+      100% { opacity: 0; transform: translateY(-50px) scaleX(1.5); }
+    }
+
+    .hero h1 {
+      font-size: 35px;
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero p {
+      font-size: 10px;
+      color: white;
+      max-width: 480px;
+      margin-bottom: 2rem;
+    }
+
+    .scroll-hint {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      color: white;
+      font-size: 0.85rem;
+      animation: bounce 2s infinite;
+    }
+
+    .scroll-hint svg { width: 24px; height: 24px; }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(8px); }
+    }
+
+    .menu-section {
+      padding: 5rem 5% 6rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+
+    .section-header h2 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-header p {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .food-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .food-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s;
+      opacity: 0;
+      transform: translateY(40px);
+    }
+
+    .food-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .food-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+    }
+
+    .food-img-wrap {
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .food-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+
+    .food-card:hover .food-img-wrap img {
+      transform: scale(1.08);
+    }
+
+    .food-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: var(--accent);
+      color: #1a1a1a;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 0.25rem 0.7rem;
+      border-radius: 50px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .food-info {
+      padding: 1.4rem 1.5rem 1.6rem;
+    }
+
+    .food-info h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+    }
+
+    .food-info .desc {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-bottom: 1.1rem;
+      line-height: 1.45;
+    }
+
+    .food-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .price {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .add-btn {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 0.55rem 1.3rem;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .add-btn:hover {
+      background: var(--primary-dark);
+      transform: scale(1.05);
+    }
+
+    .add-btn.added {
+      background: #16a34a;
+    }
+
+    .toast {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: #1a1a1a;
+      color: white;
+      padding: 0.9rem 1.6rem;
+      border-radius: 50px;
+      font-weight: 500;
+      font-size: 0.95rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      opacity: 0;
+      transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+      z-index: 200;
+      pointer-events: none;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(0,0,0,0.06);
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .bowl-container { width: 220px; height: 220px; }
+      .food-grid { grid-template-columns: 1fr; max-width: 360px; margin: 0 auto; }
+    }
+
+/* ========== RESPONSIVE (Phone) ========== */
+
+/* ========== MOBILE RESPONSIVE DESIGN ========== */
+
+@media screen and (max-width: 768px) {
+
+    /* Navigation */
+    nav {
+        width: 100%;
+        padding: 12px 4%;
+        gap: 8px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+        gap: 4px;
+        min-width: 0;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .cart-btn {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+        gap: 5px;
+        white-space: nowrap;
+    }
+
+    .cart-count {
+        width: 20px;
+        height: 20px;
+        font-size: 0.7rem;
+    }
+
+    /* Hero section */
+    .hero {
+        width: 100%;
+        min-height: 100svh;
+        padding: 6rem 1rem 3rem;
         background-position: center;
+        background-size: cover;
     }
 
-    .vis {
-        min-height: 150px;
+    .bowl-container {
+        width: min(190px, 65vw);
+        height: min(190px, 65vw);
+        margin-bottom: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 19px;
+        line-height: 1.2;
+        padding: 0 5px;
+    }
+
+    .hero p {
+        font-size: 10px;
+        max-width: 100%;
+        padding: 0 5px;
+    }
+
+    .scroll-hint {
+        font-size: 0.8rem;
+    }
+
+    /* Menu section */
+    .menu-section {
+        width: 100%;
+        max-width: 100%;
+        padding: 3.5rem 1rem 4rem;
+    }
+
+    .section-header {
+        margin-bottom: 2rem;
+    }
+
+    .section-header h2 {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+    }
+
+    .section-header p {
+        font-size: 0.9rem;
+    }
+
+    /* Food grid */
+    .food-grid {
+        width: 100%;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.5rem;
+    }
+
+    .food-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .food-img-wrap {
+        height: 190px;
+    }
+
+    .food-info {
+        padding: 1.1rem;
+    }
+
+    .food-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .food-info .desc {
+        font-size: 0.85rem;
+    }
+
+    .food-footer {
+        gap: 10px;
+    }
+
+    .price {
+        font-size: 1.15rem;
+    }
+
+    .add-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    /* Toast notification */
+    .toast {
+        max-width: calc(100% - 30px);
+        width: max-content;
+        text-align: center;
+        font-size: 0.85rem;
+        padding: 0.8rem 1rem;
+    }
+
+    /* Footer */
+    footer {
+        width: 100%;
+        padding: 2rem 1rem;
+        font-size: 0.8rem;
     }
 }
 
-.btns{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}
-.trust{font-size:.88rem;border-left:3px solid var(--r);padding-left:12px;color:#555c80}
-.vis{position:relative;width:100%;min-height:320px;aspect-ratio:5/4;border-radius:16px;overflow:hidden;background:linear-gradient(160deg,#fff,#e9edf8,#dfe3f5);border:1px solid var(--b);isolation:isolate}
-.vis svg{position:absolute;inset:0;width:100%;height:100%;display:block}
-.float{position:absolute;left:16px;bottom:16px;right:16px;max-width:300px;background:#fff;border-radius:10px;padding:14px 16px;box-shadow:0 10px 26px rgba(3,11,91,.18);border-left:4px solid var(--r);font-size:.88rem;animation:floatCard 4s 1.6s ease-in-out infinite}
-.float b{color:var(--n);display:block}
-.float p{margin:4px 0 0}
-@keyframes floatCard{50%{transform:translateY(-6px)}}
-.ring{transform-box:fill-box;transform-origin:center;animation:spin 28s linear infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
-.chart-bar{transform-box:fill-box;transform-origin:bottom;animation:grow 1s cubic-bezier(.2,.8,.2,1) both,sway 4s 1.2s ease-in-out infinite}
-.chart-bar:nth-of-type(2){animation-delay:.15s,1.4s}
-.chart-bar:nth-of-type(3){animation-delay:.3s,1.6s}
-.chart-bar:nth-of-type(4){animation-delay:.45s,1.8s}
-.chart-bar:nth-of-type(5){animation-delay:.6s,2s}
-@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
-@keyframes sway{50%{transform:scaleY(.93)}}
-.orb{animation:orbFloat 5s ease-in-out infinite}
-.orb.b{animation-duration:6.5s;animation-delay:-2s}
-.orb.c{animation-duration:4s;animation-delay:-1s}
-@keyframes orbFloat{50%{transform:translateY(-14px)}}
-.in{opacity:0;transform:translateY(18px);animation:up .7s forwards}
-@keyframes up{to{opacity:1;transform:none}}
-.rv{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}
-.rv.on{opacity:1;transform:none}
-.panel{background:#fff;border:1px solid var(--b);border-radius:14px;padding:28px;max-width:760px;margin:0 auto;box-shadow:0 4px 18px rgba(3,11,91,.07)}
-.prog{height:6px;background:var(--b);border-radius:3px;margin-bottom:20px}
-.prog i{display:block;height:100%;background:linear-gradient(90deg,var(--n2),var(--r2));border-radius:3px;transition:width .3s}
-.opt{display:block;width:100%;text-align:left;margin:8px 0;padding:13px 16px;border:1px solid var(--b);border-radius:8px;background:#fff;font:1rem var(--ff);color:var(--n);cursor:pointer;transition:.2s}
-.opt:hover{border-color:var(--n);transform:translateX(4px)}
-.opt[aria-checked=true]{border-color:var(--r);background:#fdf3f3;font-weight:600}
-.row{display:flex;justify-content:space-between;gap:10px;margin-top:20px;flex-wrap:wrap}
-.err{color:var(--r);font-size:.88rem;min-height:1.2em}
-.note{font-size:.82rem;color:#5b6285}
-ul.chk{padding-left:18px;font-size:.92rem;margin:0 0 16px}
-.tw{overflow-x:auto;margin-top:24px}
-table{border-collapse:collapse;width:100%;min-width:640px;background:#fff}
-th,td{border:1px solid var(--b);padding:10px 12px;text-align:left;font-size:.9rem;vertical-align:top}
-th{background:var(--n);color:#fff}
-.est label{display:flex;gap:10px;align-items:center;padding:8px 0}
-.est input{width:18px;height:18px;accent-color:var(--r)}
-.steps{display:grid;gap:0;counter-reset:s;position:relative;padding-left:0}
-@media(min-width:960px){.steps{grid-template-columns:repeat(6,1fr);gap:12px}}
-.st{position:relative;padding:0 0 28px 64px}
-.st .nm{position:absolute;left:0;top:0;width:44px;height:44px;border-radius:50%;background:var(--n);color:#fff;display:grid;place-items:center;font-weight:700;transition:.3s}
-.st .nm:after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--n2);animation:ringPulse 2.6s ease-out infinite}
-@keyframes ringPulse{from{transform:scale(1);opacity:.7}to{transform:scale(1.7);opacity:0}}
-.st:before{content:"";position:absolute;left:21px;top:44px;bottom:0;width:2px;background:var(--b)}
-.st:last-child:before{display:none}
-.st:hover .nm{background:var(--r2);transform:scale(1.1)}
-@media(min-width:960px){.st{padding:64px 0 0;text-align:center}.st .nm{left:calc(50% - 22px)}.st:before{left:calc(50% + 28px);top:21px;bottom:auto;width:calc(100% - 44px);height:2px}}
-.tag{display:inline-block;background:#fdeeee;color:var(--r);font-size:.72rem;font-weight:700;padding:2px 8px;border-radius:20px;margin-bottom:10px;align-self:flex-start}
-.car{max-width:720px;margin:0 auto;text-align:center}
-.car blockquote{margin:0 0 14px;font-size:1.15rem;color:var(--n)}
-.cta{background:linear-gradient(120deg,var(--n),var(--n2),var(--n),#440202);background-size:300% 300%;animation:bgmove 14s ease-in-out infinite;color:#fff;border-radius:18px;padding:48px 28px;text-align:center;border-bottom:6px solid var(--r)}
-.cta h2{color:#fff}
-@keyframes bgmove{50%{background-position:100% 100%}}
-form{display:grid;gap:16px;max-width:720px}
-label{font-weight:600;color:var(--n);font-size:.92rem;display:block;margin-bottom:4px}
-input,select,textarea{width:100%;padding:12px;border:1px solid #b8bed6;border-radius:8px;font:1rem var(--ff);color:var(--t);background:#fff}
-input[type=checkbox]{width:18px;height:18px;accent-color:var(--r)}
-input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{border-color:var(--r)}
-.hp{position:absolute;left:-9999px}
-#fs{padding:12px;border-radius:8px;background:var(--g);border-left:4px solid var(--n)}
-footer{background:var(--n);color:#e6e8f5;padding:56px 0 24px}
-footer h4{color:#fff;margin:0 0 12px;font-size:.8rem;letter-spacing:.1em;border-bottom:2px solid var(--r);display:inline-block;padding-bottom:4px}
-footer ul{list-style:none;padding:0;margin:0}
-footer li{margin:6px 0}
-footer a{text-decoration:none;font-size:.9rem;display:inline-block;transition:transform .25s,color .25s}
-footer a:hover{color:#ff8a8f;transform:translateX(4px)}
-.fg{display:grid;gap:28px;grid-template-columns:repeat(2,1fr)}
-.fg .br{grid-column:1/-1}
-@media(min-width:960px){.fg{grid-template-columns:1.6fr repeat(5,1fr)}.fg .br{grid-column:auto}}
-.fb{border-top:1px solid rgba(255,255,255,.18);margin-top:36px;padding-top:18px;display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;font-size:.85rem}
-.fb nav a{margin-right:16px}
-#up{position:fixed;right:18px;bottom:18px;width:44px;height:44px;border-radius:50%;border:0;background:var(--r);color:#fff;font-size:1.2rem;cursor:pointer;z-index:40;transition:.25s}
-#up:hover{background:var(--r2);transform:translateY(-4px)}
-#pg{position:fixed;top:0;left:0;height:3px;width:0;z-index:60;background:linear-gradient(90deg,var(--n),var(--n2),var(--r2))}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.in,.rv{opacity:1;transform:none}}
-@media(max-width:600px){section{padding:54px 0}.hero{padding:38px 0 54px}.vis{min-height:280px}.panel{padding:20px}.fg{gap:22px}}
+/* Extra small phones */
+@media screen and (max-width: 360px) {
 
-.logo-text {
-  display: inline-block;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.4;
-  letter-spacing: 2px;
-  color: #030B5B;
-  text-transform: uppercase;
-  vertical-align: middle;
-  margin-left: 8px;
-}
-.site-logo {
-  display: block;
-  width: 40px;
-  height: auto;
-  object-fit: contain;
+    nav {
+        padding: 10px 3%;
+    }
+
+    .logo {
+        font-size: 1.05rem;
+    }
+
+    .cart-btn {
+        padding: 7px 9px;
+        font-size: 0.8rem;
+    }
+
+    .bowl-container {
+        width: 170px;
+        height: 170px;
+    }
+
 }
 
-</style>
+
+  </style>
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
-<symbol id="i-building" viewBox="0 0 24 24"><path d="M4 21V4l9-2v19M13 8h7v13M8 7v1M8 11v1M8 15v1M17 12v1M17 16v1M2 21h20"/></symbol>
-<symbol id="i-id" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6 16c.6-2 4.4-2 6 0M15 10h3M15 14h3"/></symbol>
-<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></symbol>
-<symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></symbol>
-<symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6zM14 2v6h6M9 13h8M9 17h8"/></symbol>
-<symbol id="i-bank" viewBox="0 0 24 24"><path d="M3 10l9-6 9 6zM5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 21h18"/></symbol>
-<symbol id="i-calc" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M8 6h8M8 11h2M14 11h2M8 15h2M14 15h2M8 18h2M14 18h2"/></symbol>
-<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z"/><path d="M9 12l2 2 4-4"/></symbol>
-<symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2 21c0-4 3-6 7-6s7 2 7 6M16 4.5a3.5 3.5 0 0 1 0 7M18 15c2.5.6 4 2.4 4 6"/></symbol>
-<symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h12M9 12h12M9 18h12M3 6h2M3 12h2M3 18h2"/></symbol>
-<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol>
-<symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
-<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
-</defs></svg>
 
-<header id="top"><div class="wrap bar">
-<a class="logo" href="#top" aria-label="abc BUSINESS SOLUTION home">
-  <img src="Alpha.png" alt="abc BUSINESS SOLUTION" class="site-logo">
-</a>
-<small class="logo-text">abc</small>
-<nav id="nav" aria-label="Main"><ul class="top" id="topnav"></ul></nav>
-<a class="btn hcta" href="#/contact">Get a Free Quote</a>
-<button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
-</div></header>
+  <nav id="navbar">
+    <div class="logo">ടുഡേ കിച്ചൻ</div>
+    <ul class="nav-links">
+      <li><a href="#home">ഹോം പേജ്</a></li>
+      <li><a href="#menu">മെനു</a></li>
+      <li><a href="#about">കുറിച്ച്</a></li>
+    </ul>
+    <button class="cart-btn" id="cartBtn">
+      🛒 കാർട്ട്
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </nav>
 
-<main id="home">
-<section class="hero">
-    <div class="wrap">
-        <div class="hero-content">
-            <span class="lab in">Your UAE business partner</span>
-
-            <h1 class="in" style="animation-delay:.1s">
-                Start Your UAE Business With Confidence
-            </h1>
-
-            <p class="lead in" style="animation-delay:.3s">
-                Company formation, licensing, visas and corporate
-                services — all under one roof.
-            </p>
-
-            <div class="btns in" style="animation-delay:.5s">
-                <a class="btn" href="#/contact">Get a Free Quote</a>
-                <a class="btn o" href="#quiz">Find Your Setup</a>
-            </div>
-
-            <p class="trust in" style="animation-delay:.6s">
-                Clear guidance on options, costs and next steps
-                before you commit.
-            </p>
-        </div>
-
-        <div class="vis in" style="animation-delay:.4s">
-		<img src="pexels-silverkblack-23496604.jpg" alt="Business professionals collaborating in an office" style="width:100%;height:100%;object-fit:cover">
-            <div class="float">
-                <b>Mainland, free zone or offshore</b>
-                We help you compare structures before you decide.
-            </div>
-        </div>
+  <section class="hero" id="home">
+    <div class="bowl-container">
+      <div class="steam">
+        <span></span><span></span><span></span>
+      </div>
+      <img
+        src="https://images.pexels.com/photos/10078271/pexels-photo-10078271.jpeg"
+        alt="Steaming Rice Bowl"
+        class="rice-bowl"
+      />
     </div>
-</section>
+    <h1>രുചികരമായ ഭക്ഷണം<br>സ്നേഹത്തോടെ നിർമ്മിച്ചത്</h1>
+    <p>ഞങ്ങളുടെ രുചികരമായ മെനു കാണുന്നതിനായി താഴേക്ക് സ്ക്രോൾ ചെയ്യുക, നിങ്ങൾക്ക് ഇഷ്ടപ്പെട്ടവ കാർട്ടിലേക്ക് ചേർക്കുക.</p>
+    <div class="scroll-hint">
+      <span>സ്ക്രോൾ ചെയ്യുക</span>
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+      </svg>
+    </div>
+  </section>
 
+  <section class="menu-section" id="menu">
+    <div class="section-header">
+      <h2>ഇന്നത്തെ ഭക്ഷണം</h2>
+      <p>നല്ല ഭക്ഷണം എന്നാൽ ആരോഗ്യം</p>
+    </div>
 
-<section class="alt" id="looking"><div class="wrap"><div class="hd rv"><span class="lab">How can we help</span><h2>What Are You Looking For?</h2><p>Tell us what you need, and we’ll help you find the right business solution.</p></div><div class="grid g4" id="looking-g"></div></div></section>
-<section id="solutions"><div class="wrap"><div class="hd rv"><span class="lab">Structures</span><h2>Complete Business Setup Solutions</h2><p>Choose a business structure that aligns with your goals, activities and long-term plans.</p></div><div class="grid g3" id="sol-g"></div></div></section>
-<section class="alt" id="quiz"><div class="wrap"><div class="hd rv"><span class="lab">Setup finder</span><h2>Find the Right UAE Business Setup</h2><p>Answer a few simple questions to discover which setup options may suit your business.</p></div><div class="panel rv" id="quizbox" aria-live="polite"></div></div></section>
-<section id="services"><div class="wrap"><div class="hd rv"><span class="lab">Services</span><h2>Our Business Services</h2><p>Practical business support from formation to ongoing corporate administration.</p></div><div class="grid g4" id="svc-g"></div></div></section>
-<section class="alt" id="jurisdiction"><div class="wrap"><div class="hd rv"><span class="lab">Compare</span><h2>Choose Your Business Jurisdiction</h2><p>Understand the differences before deciding where to establish your business.</p></div><div class="grid g3" id="jur-g"></div><p style="margin-top:28px"><button class="btn" id="cmpbtn" aria-expanded="false" aria-controls="cmp">Compare Options</button></p><div class="tw" id="cmp" hidden></div><p class="note" style="margin-top:12px">General considerations only; rules vary by authority and activity. Confirm with the licensing authority.</p></div></section>
-<section id="freezones"><div class="wrap"><div class="hd rv"><span class="lab">Free zones</span><h2>Explore Popular UAE Free Zones</h2><p>Discover jurisdictions that may suit different industries, activities and business objectives.</p></div><div class="grid g4" id="fz-g"></div><p class="note" style="margin-top:14px">Descriptions are general. Verify current activities, fees and eligibility with each authority. abc BUSINESS SOLUTION is not affiliated with these free zones unless stated.</p></div></section>
-<section class="alt" id="costs"><div class="wrap"><div class="hd rv"><span class="lab">Costs</span><h2>Transparent Business Setup</h2><p>Understand the main cost components before making your decision.</p></div><div class="grid g2"><div class="card rv"><h3>What makes up the total</h3><ul class="chk" id="cost-l"></ul><p>Total costs vary by jurisdiction, business activity, visa requirements, office arrangements and government charges. No verified pricing is published here, so we prepare a tailored quotation.</p></div><div class="card est rv"><h3>Quote request builder</h3><p class="note">Select what you need. This produces no prices; it only prepares your request for a tailored quotation.</p><div id="est"></div><p id="est-out" aria-live="polite" style="font-weight:600;color:var(--n)"></p><a class="btn" href="#/contact" id="est-btn">Get a Detailed Quote</a></div></div></div></section>
-<section id="how"><div class="wrap"><div class="hd rv"><span class="lab">Process</span><h2>How It Works</h2><p>A clear process to help you move from planning to setup.</p></div><ol class="steps" id="steps" style="list-style:none;margin:0"></ol><p class="note">Licences, visas and bank accounts depend on eligibility, authority approval and third-party requirements; none are guaranteed.</p></div></section>
-<section class="alt" id="why"><div class="wrap"><div class="hd rv"><span class="lab">Why abc</span><h2>Why Choose abc BUSINESS SOLUTION?</h2><p>Business guidance designed around your goals, requirements and next steps.</p></div><div class="grid g3" id="why-g"></div></div></section>
-<section id="clients"><div class="wrap"><div class="hd rv"><span class="lab">Testimonials</span><h2>What Our Clients Say</h2></div><div class="panel car rv"><span class="tag">PLACEHOLDER — replace with verified, authorised reviews</span><blockquote id="tq"></blockquote><p id="tn" class="note"></p><div class="row" style="justify-content:center"><button class="btn o" id="tp" aria-label="Previous testimonial">← Prev</button><button class="btn o" id="tx" aria-label="Next testimonial">Next →</button></div></div></div></section>
-<section class="alt" id="guides"><div class="wrap"><div class="hd rv"><span class="lab">Resources</span><h2>Business Guides &amp; Insights</h2><p>Useful information to help you make informed decisions about starting and managing a UAE business.</p></div><div class="grid g4" id="gd-g"></div><p style="margin-top:28px"><a class="btn o" href="#guides">Explore All Guides</a> <span class="note">(guides coming soon)</span></p></div></section>
-<section><div class="wrap"><div class="cta rv"><h2>Ready to Start Your UAE Business?</h2><p>Get the right setup. The right license. The right support.</p><a class="btn" href="#/contact">Get Started</a></div></div></section>
-</main>
+    <div class="food-grid">
 
-<main id="contact-view" hidden><section><div class="wrap">
-<div class="hd"><span class="lab">Contact</span><h1>Let’s Discuss Your UAE Business Plans</h1><p>Tell us what you need, and our team can help you explore the next steps.</p></div>
-<div class="grid g4" id="cc" style="margin-bottom:40px"></div>
-<form id="cf" novalidate autocomplete="on">
-<div class="hp" aria-hidden="true"><label for="website">Leave blank</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
-<div><label for="name">Name</label><input id="name" name="name" maxlength="80" required autocomplete="name"><div class="err" id="e-name"></div></div>
-<div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" maxlength="20" required autocomplete="tel"><div class="err" id="e-phone"></div></div>
-<div><label for="email">Email</label><input id="email" name="email" type="email" maxlength="120" required autocomplete="email"><div class="err" id="e-email"></div></div>
-<div><label for="nat">Nationality</label><input id="nat" name="nationality" maxlength="60" required><div class="err" id="e-nat"></div></div>
-<div><label for="ctry">Current Country</label><input id="ctry" name="country" maxlength="60" required><div class="err" id="e-ctry"></div></div>
-<div><label for="svc">Service Required</label><select id="svc" name="service" required></select><div class="err" id="e-svc"></div></div>
-<div><label for="msg">Message</label><textarea id="msg" name="message" rows="5" maxlength="1000" required></textarea><div class="err" id="e-msg"></div></div>
-<div><label style="font-weight:400"><input type="checkbox" id="consent" style="width:auto"> I agree that abc BUSINESS SOLUTION may use these details only to respond to my enquiry. <a href="#privacy">Privacy notice</a>: we collect only what is needed to reply and keep it no longer than necessary (set your retention period).</label><div class="err" id="e-consent"></div></div>
-<div><button class="btn" id="sub" type="submit">Get My Free Consultation</button></div><div id="fs" role="status" aria-live="polite" hidden></div>
-<p class="note">This form is a front-end demo until a secure backend endpoint is configured. Do not submit real personal information until it is connected.</p>
-</form></div></section></main>
+      <!-- Product 1 -->
+      <div class="food-card">
+        <div class="food-img-wrap">
+          <img src="https://images.pexels.com/photos/10078271/pexels-photo-10078271.jpeg" alt="Classic Curd Rice" />
+          <span class="food-badge">Bestseller</span>
+        </div>
+        <div class="food-info">
+          <h3>Classic Curd Rice</h3>
+          <p class="desc">Cool & creamy curd rice with pomegranate, curry leaves & pickle</p>
+          <div class="food-footer">
+            <span class="price">₹149</span>
+            <button class="add-btn" data-name="Classic Curd Rice">+ Add</button>
+          </div>
+        </div>
+      </div>
 
-<footer><div class="wrap"><div class="fg" id="fg"></div><div class="fb"><span>© <span id="yr"></span> abc BUSINESS SOLUTION. All rights reserved.</span><nav aria-label="Legal"><a href="#privacy">Privacy Policy</a><a href="#terms">Terms &amp; Conditions</a><a href="#cookies">Cookie Policy</a></nav></div></div></footer>
-<button id="up" aria-label="Back to top" hidden>↑</button>
+      <!-- Product 2 -->
+      <div class="food-card">
+        <div class="food-img-wrap">
+          <img src="https://images.unsplash.com/photo-1775039983749-aa6003c8ecf9?w=500&h=400&fit=crop&q=80" alt="Spicy Chicken Rice" />
+          <span class="food-badge">Spicy</span>
+        </div>
+        <div class="food-info">
+          <h3>Spicy Chicken Rice</h3>
+          <p class="desc">Tender glazed chicken with veggies over fragrant fried rice</p>
+          <div class="food-footer">
+            <span class="price">₹249</span>
+            <button class="add-btn" data-name="Spicy Chicken Rice">+ Add</button>
+          </div>
+        </div>
+      </div>
 
-<script>
-"use strict";
-/* Add verified contact details and a secured HTTPS form endpoint before launch. */
-const CONFIG={whatsapp:"",phone:"",email:"",address:"",FORM_ENDPOINT:""};
-const NS="http://www.w3.org/2000/svg";
-const $=s=>document.querySelector(s);
-const h=(t,c,x,a)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;if(a)for(const k in a)e.setAttribute(k,a[k]);return e};
-const ic=n=>{const s=document.createElementNS(NS,"svg");s.setAttribute("class","ic");s.setAttribute("aria-hidden","true");const u=document.createElementNS(NS,"use");u.setAttribute("href","#i-"+n);s.append(u);return s};
-const safeHref=u=>/^(#|https:\/\/|mailto:|tel:)/.test(u)?u:"#";
-const NAV=[
-["BUSINESS SETUP",[["Company Formation","#solutions"],["Business Licenses","#services"],["Business Activities","#quiz"],["Offshore Setup","#jurisdiction"]]],
-["FREE ZONES",[["Explore Free Zones","#freezones"],["Compare Free Zones","#jurisdiction"],["Popular Free Zones","#freezones"]]],
-["MAINLAND",[["Mainland Company Formation","#solutions"],["Mainland Licenses","#jurisdiction"],["Mainland Business Activities","#jurisdiction"]]],
-["PRO & VISA",[["PRO Services","#services"],["Investor Visa","#services"],["Partner Visa","#services"],["Golden Visa","#services"],["Emirates ID","#services"],["Medical and Document Clearing","#services"]]],
-["CORPORATE SERVICES",[["Banking Assistance","#services"],["Accounting","#services"],["VAT","#services"],["Corporate Tax","#services"],["Insurance","#services"],["License Renewal","#services"],["License Amendment","#services"],["Business Closure","#services"]]],
-["PACKAGES","#costs"],
-["RESOURCES",[["Blog","#guides"],["Business Guides","#guides"],["FAQs","#/contact"],["Free Zone Comparison","#jurisdiction"],["Setup Calculator","#costs"],["Case Studies","#clients"]]],
-["ABOUT","#why"]
-];
-const topnav=$("#topnav");
-NAV.forEach(([label,sub])=>{
- const li=h("li");
- if(typeof sub==="string"){li.append(h("a",null,label,{href:sub}));}
- else{
-  const b=h("button",null,label+" ▾",{"aria-expanded":"false","aria-haspopup":"true","type":"button"});
-  const ul=h("ul","sub");
-  sub.forEach(([text,href])=>{const item=h("li");item.append(h("a",null,text,{href}));ul.append(item)});
-  b.addEventListener("click",()=>{const open=li.classList.toggle("open");b.setAttribute("aria-expanded",String(open))});
-  li.append(b,ul);
- }
- topnav.append(li);
-});
-function closeAll(){document.querySelectorAll(".top>li.open").forEach(li=>{li.classList.remove("open");const b=li.querySelector("button");if(b)b.setAttribute("aria-expanded","false")});document.body.classList.remove("menu-open");$("#burger").setAttribute("aria-expanded","false");$("#burger").setAttribute("aria-label","Open menu")}
-document.addEventListener("keydown",e=>{if(e.key==="Escape")closeAll()});
-document.addEventListener("click",e=>{if(!e.target.closest(".top>li.open")&&!e.target.closest(".burger"))closeAll()});
-$("#burger").addEventListener("click",()=>{const open=document.body.classList.toggle("menu-open");$("#burger").setAttribute("aria-expanded",String(open));$("#burger").setAttribute("aria-label",open?"Close menu":"Open menu")});
-$("#nav").addEventListener("click",e=>{if(e.target.closest(".sub a")||e.target.closest(".top>li>a"))closeAll()});
+      <!-- Product 3 -->
+      <div class="food-card">
+        <div class="food-img-wrap">
+          <img src="https://images.unsplash.com/photo-1771074168436-8692a866cdb1?w=500&h=400&fit=crop&q=80" alt="Veggie Power Bowl" />
+          <span class="food-badge">Healthy</span>
+        </div>
+        <div class="food-info">
+          <h3>Veggie Power Bowl</h3>
+          <p class="desc">Colorful mix of rice, chickpeas, greens, paneer & fresh veggies</p>
+          <div class="food-footer">
+            <span class="price">₹199</span>
+            <button class="add-btn" data-name="Veggie Power Bowl">+ Add</button>
+          </div>
+        </div>
+      </div>
 
-function card(parent,o){
- const a=h(o.href?"a":"div","card rv");
- if(o.href)a.href=o.href;
- a.append(ic(o.icon),h("h3",null,o.title),h("p",null,o.text));
- if(o.cta)a.append(h("span","go",o.cta));
- parent.append(a);return a;
-}
-[
-["building","Start a Business","Explore company formation options in the UAE.","#solutions"],
-["id","Get a Visa","Understand available visa and residency assistance.","#services"],
-["pin","Choose a Free Zone","Compare business jurisdictions and free zone options.","#freezones"],
-["gear","Manage My Existing Company","Get support with renewals, compliance and corporate services.","#services"]
-].forEach(([icon,title,text,href])=>card($("#looking-g"),{icon,title,text,href,cta:"Explore"}));
+      <!-- Product 4 -->
+      <div class="food-card">
+        <div class="food-img-wrap">
+          <img src="https://images.unsplash.com/photo-1752673508949-f4aeeaef75f0?w=500&h=400&fit=crop&q=80" alt="Clay Pot Biryani" />
+          <span class="food-badge">Premium</span>
+        </div>
+        <div class="food-info">
+          <h3>Clay Pot Biryani</h3>
+          <p class="desc">Aromatic saffron basmati rice cooked in traditional clay pot</p>
+          <div class="food-footer">
+            <span class="price">₹279</span>
+            <button class="add-btn" data-name="Clay Pot Biryani">+ Add</button>
+          </div>
+        </div>
+      </div>
 
-[
-["building","Mainland","Establish a company licensed by an emirate’s economic department, generally allowing you to operate across the UAE market, subject to the licensed activity.","Explore Mainland"],
-["globe","Free Zone","Set up within a designated zone with its own authority, rules and activity list. Options differ widely between zones.","Explore Free Zones"],
-["shield","Offshore","Offshore structures are typically used for holding assets or international structuring and carry operating limits, subject to applicable rules.","Explore Offshore"]
-].forEach(([icon,title,text,cta])=>card($("#sol-g"),{icon,title,text,href:"#jurisdiction",cta}));
+      <!-- Product 5 -->
+      <div class="food-card">
+        <div class="food-img-wrap">
+          <img src="https://images.unsplash.com/photo-1789977968137-67d77ef9b439?w=500&h=400&fit=crop&q=80" alt="Beef Gyudon Bowl" />
+          <span class="food-badge">New</span>
+        </div>
+        <div class="food-info">
+          <h3>Beef Gyudon Bowl</h3>
+          <p class="desc">Japanese-style beef & egg rice bowl with green onions</p>
+          <div class="food-footer">
+            <span class="price">₹299</span>
+            <button class="add-btn" data-name="Beef Gyudon Bowl">+ Add</button>
+          </div>
+        </div>
+      </div>
 
-[
-["building","Company Formation","Guidance on structure, activity and application."],
-["doc","Business Licenses","Support with licence types, applications and requirements."],
-["pin","Free Zones","Help comparing and applying to free zone authorities."],
-["users","PRO Services","Government liaison and administrative paperwork."],
-["id","Visa Services","Guidance on residency and visa processes."],
-["bank","Banking","Assistance with account-opening preparation."],
-["calc","Accounting & Tax","Bookkeeping, VAT and corporate tax support."],
-["list","Document Clearing","Attestation, translation and document processing."]
-].forEach(([icon,title,text])=>card($("#svc-g"),{icon,title,text,href:"#/contact",cta:"Learn More"}));
+      <!-- Product 6 -->
+      <div class="food-card">
+        <div class="food-img-wrap">
+          <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=500&h=400&fit=crop&q=80" alt="Paneer Butter Bowl" />
+          <span class="food-badge">Popular</span>
+        </div>
+        <div class="food-info">
+          <h3>Paneer Butter Bowl</h3>
+          <p class="desc">Rich & creamy paneer butter masala served with steamed rice</p>
+          <div class="food-footer">
+            <span class="price">₹229</span>
+            <button class="add-btn" data-name="Paneer Butter Bowl">+ Add</button>
+          </div>
+        </div>
+      </div>
 
-[
-["Mainland","Suitable business activities: trading, services and activities needing UAE-wide market access.","Operating: consider office and local-licence requirements.","Licensing: issued by the relevant emirate authority; some activities need approvals."],
-["Free Zone","Benefits are jurisdiction-specific; check each zone’s terms.","Activities: limited to the zone’s approved list.","Office and visa options vary by zone and package."],
-["Offshore","Potential holding or international structuring uses.","Limitations: typically restricted from trading inside the UAE.","Regulatory: ongoing compliance and substance rules may apply."]
-].forEach(([title,a,b,c])=>{
- const k=card($("#jur-g"),{icon:"list",title,text:""});
- k.querySelector("p").remove();
- const ul=h("ul","chk");[a,b,c].forEach(x=>ul.append(h("li",null,x)));
- k.append(ul,h("a","go","Explore "+title,{href:"#/contact"}));
-});
+    </div>
+  </section>
 
-const CMP=[
-["","Mainland","Free Zone","Offshore"],
-["Typical use cases","Local and UAE-wide trade or services","Zone-based or export-oriented activities","Holding, international structuring"],
-["Licensing","Emirate authority","Zone authority","Offshore registrar"],
-["Office requirements","Often required","Varies by package","Registered address"],
-["Visa eligibility","Depends on licence and office","Depends on zone package","Generally limited"],
-["Operating restrictions","Activity-based","Zone-based","Typically no UAE trading"],
-["Cost components","Licence, office, approvals, visas","Licence, package, visas, fees","Registration, agent, renewals"]
-];
-{
- const table=h("table");table.append(h("caption",null,"General comparison",{style:"text-align:left;font-weight:600;margin-bottom:6px"}));
- CMP.forEach((row,i)=>{const tr=h("tr");row.forEach((value,j)=>tr.append(h(i===0||j===0?"th":"td",null,value,(i===0||j===0)?{scope:i===0?"col":"row"}:null)));table.append(tr)});
- $("#cmp").append(table);
-}
-$("#cmpbtn").addEventListener("click",function(){const cmp=$("#cmp");cmp.hidden=!cmp.hidden;this.setAttribute("aria-expanded",String(!cmp.hidden));if(!cmp.hidden)cmp.scrollIntoView({behavior:"smooth",block:"nearest"})});
+  <footer>© 2026 ടുഡേ കിച്ചൻ</footer>
 
-[
-["DMCC","Dubai Multi Commodities Centre","Dubai (Jumeirah Lakes Towers)","Commodities, trading and related services."],
-["IFZA","International Free Zone Authority","Dubai","Wide range of trading and service activities."],
-["Meydan Free Zone","Meydan FZ","Dubai","Services, consulting and trading activities."],
-["RAKEZ","Ras Al Khaimah Economic Zone","Ras Al Khaimah","Industrial, trading and service licences."],
-["SPC Free Zone","Sharjah Publishing City Free Zone","Sharjah","Publishing, media, creative and e-commerce."],
-["JAFZA","Jebel Ali Free Zone","Dubai (Jebel Ali)","Logistics, trade and industrial operations."],
-["Dubai South","Dubai South Free Zone","Dubai (near Al Maktoum Airport)","Aviation, logistics and e-commerce."],
-["SHAMS","Sharjah Media City","Sharjah","Media, creative and consulting activities."]
-].forEach(([name,full,location,description])=>{
- const k=card($("#fz-g"),{icon:"pin",title:name,text:full+" — "+location+". "+description});
- k.append(h("a","go","Explore Free Zone",{href:"#/contact"}));
-});
+  <div class="toast" id="toast">കാർട്ടിലേക്ക് ചേർത്തു!</div>
 
-const COST=["License","Visa","Office","Government Fees","Additional Services"];
-COST.forEach(item=>{
- $("#cost-l").append(h("li",null,item));
- const label=h("label");const input=h("input",null,null,{type:"checkbox",value:item});
- input.addEventListener("change",()=>{
-  const selected=[...document.querySelectorAll("#est input:checked")].map(x=>x.value);
-  $("#est-out").textContent=selected.length?"Request a tailored quotation for: "+selected.join(", "):"";
- });
- label.append(input,document.createTextNode(item));$("#est").append(label);
-});
-[
-"Consultation|Understand your goals, activities and requirements.",
-"Choose Activity|Identify the business activities you intend to carry out.",
-"Choose Jurisdiction|Explore appropriate mainland, free zone or offshore options.",
-"Documentation|Prepare the required documents and application information.",
-"License|Proceed through the applicable licensing process.",
-"Visa & Banking|Receive guidance on visa and banking procedures, subject to eligibility and third-party requirements."
-].forEach((entry,index)=>{const [title,description]=entry.split("|");const li=h("li","st rv");li.append(h("span","nm","0"+(index+1)),h("h3",null,title),h("p","note",description));$("#steps").append(li)});
+  <script>
+    let cartCount = 0;
+    const cartCountEl = document.getElementById('cartCount');
+    const toast = document.getElementById('toast');
+    const navbar = document.getElementById('navbar');
 
-[
-["users","Personalized Guidance","Advice shaped around your goals."],
-["list","Clear Cost Breakdown","Cost components explained up front."],
-["globe","Multiple Setup Options","Mainland, free zone and offshore compared."],
-["shield","Support Throughout the Process","Help from enquiry to licence."],
-["doc","Practical Corporate Assistance","Help with everyday administration."],
-["gear","Ongoing Business Support","Renewals, amendments and compliance."]
-].forEach(([icon,title,text])=>card($("#why-g"),{icon,title,text}));
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.15 });
 
-[
-["Mainland vs Free Zone: Understanding the Differences","Setup"],
-["Documents Required to Start a UAE Business","Documents"],
-["Understanding UAE Business License Costs","Costs"],
-["A Beginner’s Guide to UAE Residency Visas","Visas"]
-].forEach(([title,category])=>{const k=card($("#gd-g"),{icon:"doc",title,text:"Article in preparation. Content will be published after review."});k.insertBefore(h("span","tag",category+" · Coming soon"),k.firstChild);k.append(h("span","go","Read More"))});
+    document.querySelectorAll('.food-card').forEach(card => observer.observe(card));
 
-const FOOT=[
-["BUSINESS SETUP",["Company Formation","Mainland","Free Zone","Offshore","Business Licenses","Business Activities"],"#solutions"],
-["PRO & VISA",["PRO Services","Investor Visa","Partner Visa","Golden Visa","Emirates ID","Medical","Document Clearing"],"#services"],
-["CORPORATE SERVICES",["Banking","Accounting","VAT","Corporate Tax","Insurance","Renewal","License Amendment","Business Closure"],"#services"],
-["RESOURCES",["Blog","Guides","FAQs","Free Zone Comparison","Setup Calculator","Case Studies"],"#guides"],
-["COMPANY",["About","Why abc","Contact"],"#why"]
-];
-{
- const brand=h("div","br");
- brand.append(h("div",null,"abc BUSINESS SOLUTION",{style:"font-weight:800;font-size:1.2rem;color:#fff"}),h("p","note","Business setup and corporate support for entrepreneurs and companies exploring opportunities in the UAE.",{style:"color:#cfd3ec"}));
- $("#fg").append(brand);
- FOOT.forEach(([title,items,destination])=>{const col=h("div");col.append(h("h4",null,title));const ul=h("ul");items.forEach(label=>{const li=h("li");li.append(h("a",null,label,{href:label==="Contact"?"#/contact":destination}));ul.append(li)});col.append(ul);$("#fg").append(col)});
-}
-$("#yr").textContent=new Date().getFullYear();
+    // Add buttons
+    document.querySelectorAll('.add-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        cartCount++;
+        cartCountEl.textContent = cartCount;
 
-/* Setup finder quiz */
-const Q=[
-["What is your main business objective?",["Start a new business","Expand an existing business","Hold investments or assets","Explore options"]],
-["What type of business activity are you planning?",["Trading","Professional services","E-commerce","Consultancy","Other"]],
-["Where do you expect to operate?",["Mainly within the UAE","Mainly internationally","Both UAE and international markets","Not sure yet"]],
-["What is your estimated budget?",["Let me explore affordable options","Moderate budget","Flexible budget","Need consultation first"]]
-];
-let qi=0;const qa=[];const qb=$("#quizbox");
-function renderQuiz(){
- qb.replaceChildren();
- if(qi>=Q.length){
-  const location=qa[2],objective=qa[0];
-  let guidance;
-  if(objective===2)guidance="Offshore or holding structures may be worth exploring, alongside free zone holding options.";
-  else if(location===0)guidance="A mainland licence may suit activities aimed mainly at the UAE market; some free zones also allow limited local dealings.";
-  else if(location===1)guidance="A free zone may suit internationally focused activities; compare zones by activity list, office and visa options.";
-  else guidance="Both mainland and free zone options may fit. A consultation can clarify which suits your activity and markets.";
-  qb.append(h("h3",null,"Your preliminary guidance"),h("p",null,guidance),h("p","note","This is preliminary guidance only, not a definitive legal or financial recommendation. Requirements depend on your activity and the licensing authority."));
-  const row=h("div","row");const contact=h("a","btn","Request a consultation",{href:"#/contact"});const restart=h("button","btn o","Restart",{type:"button"});
-  restart.addEventListener("click",()=>{qi=0;qa.length=0;renderQuiz()});row.append(contact,restart);qb.append(row);return;
- }
- const progress=h("div","prog");const fill=h("i");fill.style.width=(qi/Q.length*100)+"%";progress.append(fill);
- const fieldset=h("fieldset",null,null,{style:"border:0;padding:0;margin:0"});
- fieldset.append(h("legend",null,"Question "+(qi+1)+" of "+Q.length+": "+Q[qi][0],{style:"font-weight:700;color:var(--n);margin-bottom:10px"}));
- const error=h("div","err");error.setAttribute("role","alert");
- Q[qi][1].forEach((option,index)=>{const button=h("button","opt",option,{type:"button",role:"radio","aria-checked":String(qa[qi]===index)});button.addEventListener("click",()=>{qa[qi]=index;error.textContent="";fieldset.querySelectorAll(".opt").forEach((item,j)=>item.setAttribute("aria-checked",String(j===index)))});fieldset.append(button)});
- const row=h("div","row");const back=h("button","btn o","Back",{type:"button"});back.disabled=qi===0;back.addEventListener("click",()=>{qi--;renderQuiz()});
- const next=h("button","btn",qi===Q.length-1?"Find My Setup":"Next",{type:"button"});
- next.addEventListener("click",()=>{if(qa[qi]===undefined){error.textContent="Please choose an answer to continue.";return}qi++;renderQuiz()});
- row.append(back,next);qb.append(progress,fieldset,error,row);
-}
-renderQuiz();
+        this.classList.add('added');
+        this.textContent = '✓ Added';
+        setTimeout(() => {
+          this.classList.remove('added');
+          this.textContent = '+ Add';
+        }, 1200);
 
-/* Placeholder testimonials: replace with genuine authorised reviews before publishing. */
-const testimonials=[
-["Placeholder quote: add a genuine, authorised client testimonial here.","Client name — Business type — Service"],
-["Placeholder quote: replace before publication.","Client name — Business type — Service"],
-["Placeholder quote: replace before publication.","Client name — Business type — Service"]
-];
-let testimonialIndex=0;
-function showTestimonial(){$("#tq").textContent="“"+testimonials[testimonialIndex][0]+"”";$("#tn").textContent=testimonials[testimonialIndex][1]}
-showTestimonial();
-$("#tp").addEventListener("click",()=>{testimonialIndex=(testimonialIndex+testimonials.length-1)%testimonials.length;showTestimonial()});
-$("#tx").addEventListener("click",()=>{testimonialIndex=(testimonialIndex+1)%testimonials.length;showTestimonial()});
+        toast.textContent = this.dataset.name + ' ചേർത്തു!';
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 2000);
+      });
+    });
 
-/* Contact details */
-{
- const container=$("#cc");
- const digits=value=>(value||"").replace(/\D/g,"");
- const make=(icon,title,value,href)=>{const item=h(href?"a":"div","card");if(href){item.href=safeHref(href);item.rel="noopener noreferrer"}item.append(ic(icon),h("h3",null,title),h("p",null,value||"Add verified details in CONFIG"));container.append(item)};
- make("phone","WhatsApp Us",CONFIG.whatsapp,digits(CONFIG.whatsapp)&&"https://wa.me/"+digits(CONFIG.whatsapp));
- make("phone","Call Us",CONFIG.phone,digits(CONFIG.phone)&&"tel:+"+digits(CONFIG.phone));
- make("mail","Email Us",CONFIG.email,/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(CONFIG.email)&&"mailto:"+CONFIG.email);
- make("pin","Location",CONFIG.address,null);
-}
-["Select a service","Business Setup","Mainland","Free Zone","Visa","PRO","Banking","Accounting","Tax","Renewal","Other"].forEach((service,index)=>$("#svc").append(h("option",null,service,{value:index?service:""})));
+    // Navbar shadow
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    });
 
-const cf=$("#cf");
-const validators={
- name:value=>value.length>=2&&value.length<=80&&!/[<>]/.test(value),
- phone:value=>/^\+?[0-9 ()-]{7,20}$/.test(value),
- email:value=>value.length<=120&&/^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]{2,}$/.test(value),
- nat:value=>/^[\p{L} .'-]{2,60}$/u.test(value),
- ctry:value=>/^[\p{L} .'-]{2,60}$/u.test(value),
- svc:value=>value!=="",
- msg:value=>value.length>=10&&value.length<=1000
-};
-const messages={
- name:"Enter your name (2–80 characters, no < or >).",
- phone:"Enter a valid phone number (7–20 digits; + ( ) - allowed).",
- email:"Enter a valid email address.",
- nat:"Enter your nationality (letters only).",
- ctry:"Enter your current country (letters only).",
- svc:"Select a service.",
- msg:"Enter a message of 10–1000 characters."
-};
-cf.addEventListener("submit",async event=>{
- event.preventDefault();
- const status=$("#fs");let valid=true,firstInvalid=null;
- for(const key in validators){
-  const element=$("#"+key);
-  const raw=key==="msg"?element.value.trim():element.value.normalize("NFC").trim().replace(/\s+/g," ");
-  const invalid=!validators[key](raw);
-  element.setAttribute("aria-invalid",String(invalid));
-  $("#e-"+key).textContent=invalid?messages[key]:"";
-  if(invalid){valid=false;firstInvalid=firstInvalid||element}
- }
- const consent=$("#consent").checked;
- $("#e-consent").textContent=consent?"":"Please accept the privacy notice to continue.";
- if(!consent)valid=false;
- if(!valid){status.hidden=false;status.textContent="Please correct the highlighted fields."; (firstInvalid||$("#consent")).focus();return}
- if($("#website").value)return;
- const button=$("#sub");if(button.disabled)return;button.disabled=true;status.hidden=false;
- if(!CONFIG.FORM_ENDPOINT||!/^https:\/\//.test(CONFIG.FORM_ENDPOINT)){
-  status.textContent="Your details look valid, but this demo is not connected to a backend, so nothing was sent. Please contact us by phone or email.";
-  button.disabled=false;return;
- }
- try{
-  status.textContent="Sending…";
-  const body={name:$("#name").value.trim(),phone:$("#phone").value.trim(),email:$("#email").value.trim(),nationality:$("#nat").value.trim(),country:$("#ctry").value.trim(),service:$("#svc").value,message:$("#msg").value.trim()};
-  const response=await fetch(CONFIG.FORM_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body),credentials:"same-origin"});
-  if(!response.ok)throw new Error("Request failed");
-  cf.reset();status.textContent="Thank you. Your enquiry has been submitted.";
- }catch(error){status.textContent="Sorry, we could not send your message. Please try again later."}
- finally{button.disabled=false}
-});
-
-/* Reveal animations, route handling and back-to-top */
-let revealObserver=null;
-if("IntersectionObserver" in window){
- revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("on");revealObserver.unobserve(entry.target)}}),{threshold:.12});
-}
-function observeReveals(){
- document.querySelectorAll(".rv:not(.on)").forEach(element=>{
-  const siblingIndex=[...element.parentElement.children].indexOf(element);
-  element.style.transitionDelay=Math.min(siblingIndex,6)*70+"ms";
-  if(revealObserver)revealObserver.observe(element);else element.classList.add("on");
- });
-}
-observeReveals();
-function route(){
- const contact=location.hash==="#/contact";
- $("#home").hidden=contact;
- $("#contact-view").hidden=!contact;
- if(contact){window.scrollTo(0,0);closeAll();return}
- if(location.hash.length>1){
-  const targetId=location.hash.slice(1);
-  const target=document.getElementById(targetId);
-  if(target)requestAnimationFrame(()=>target.scrollIntoView({behavior:"smooth",block:"start"}));
- }
-}
-window.addEventListener("hashchange",route);
-route();
-const up=$("#up");
-window.addEventListener("scroll",()=>{up.hidden=window.scrollY<600},{passive:true});
-up.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
-{
- const progress=h("div",null,null,{id:"pg","aria-hidden":"true"});document.body.prepend(progress);
- window.addEventListener("scroll",()=>{
-  const maxScroll=document.documentElement.scrollHeight-window.innerHeight;
-  progress.style.width=(maxScroll>0?window.scrollY/maxScroll*100:0)+"%";
- },{passive:true});
-}
-</script>
+    // Cart button
+    document.getElementById('cartBtn').addEventListener('click', () => {
+      toast.textContent = cartCount === 0 ? 'കാർട്ടിൽ ഭക്ഷണസാധനങ്ങളൊന്നുമില്ല' :  ' കാർട്ടിലുള്ള ഭക്ഷണസാധനങ്ങൾ '+cartCount ;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2000);
+    });
+  </script>
 </body>
 </html>
